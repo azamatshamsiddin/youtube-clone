@@ -1,0 +1,168 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+}
+
+// .header-inner {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+// }
+
+.logo {
+  display: inline-block;
+  margin-right: auto;
+}
+
+
+.burger-menu {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin: 0 25px;
+
+  span {
+    cursor: pointer;
+    width: 18px;
+    height: 2px;
+    display: block;
+    background-color: #fff;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: inherit;
+      height: inherit;
+      display: inline-block;
+      top: -5px;
+      left: 0;
+      background-color: inherit;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: inherit;
+      height: inherit;
+      display: inline-block;
+      top: 5px;
+      left: 0;
+      background-color: inherit;
+    }
+  }
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+
+  &__search {
+    display: block;
+    border: 1px solid #424242;
+    border-radius: 2px;
+    background-color: #121212;
+    outline: none;
+    color: #dedede;
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+    height: inherit;
+    border-radius: 2px 0 0 2px;
+    padding: 3px 6px;
+
+    &::-webkit-search-cancel-button {
+      display: none;
+    }
+
+    &::placeholder {
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 26px;
+    }
+
+    &:focus {
+      border-color: #065fd4;
+    }
+  }
+
+  &__frame {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  &__m-btn {
+    display: inline-block;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+
+    &:active {
+      background-color: #333;
+    }
+
+  }
+
+  &__f-btn {
+    display: flex;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    &:active {
+      background-color: #333;
+    }
+  }
+
+  &__account img {
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 30px;
+  }
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  padding: 0 4px;
+  max-width: 650px;
+  width: 100%;
+
+  &__btn {
+    background-color: #313131;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 75px;
+    height: inherit;
+    padding-top: 5px;
+
+
+    svg {
+      color: #909090;
+    }
+
+    &:hover svg {
+      color: rgb(180, 180, 180);
+    }
+  }
+}
